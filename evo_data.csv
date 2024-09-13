@@ -1,195 +1,152 @@
-Pokemon ID,Pokemon Name,Evolution Path
-1,bulbasaur,bulbasaur -> ivysaur -> venusaur
-4,charmander,charmander -> charmeleon -> charizard
-7,squirtle,squirtle -> wartortle -> blastoise
-10,caterpie,caterpie -> metapod -> butterfree
-13,weedle,weedle -> kakuna -> beedrill
-16,pidgey,pidgey -> pidgeotto -> pidgeot
-19,rattata,rattata -> raticate
-21,spearow,spearow -> fearow
-23,ekans,ekans -> arbok
-27,sandshrew,sandshrew -> sandslash
-29,nidoran-f,nidoran-f -> nidorina -> nidoqueen
-32,nidoran-m,nidoran-m -> nidorino -> nidoking
-37,vulpix,vulpix -> ninetales
-41,zubat,zubat -> golbat -> crobat
-43,oddish,oddish -> gloom -> vileplume
-43,oddish,oddish -> gloom -> bellossom
-46,paras,paras -> parasect
-48,venonat,venonat -> venomoth
-50,diglett,diglett -> dugtrio
-52,meowth,meowth -> persian
-52,meowth,meowth -> perrserker
-54,psyduck,psyduck -> golduck
-56,mankey,mankey -> primeape -> annihilape
-58,growlithe,growlithe -> arcanine
-60,poliwag,poliwag -> poliwhirl -> poliwrath
-60,poliwag,poliwag -> poliwhirl -> politoed
-63,abra,abra -> kadabra -> alakazam
-66,machop,machop -> machoke -> machamp
-69,bellsprout,bellsprout -> weepinbell -> victreebel
-72,tentacool,tentacool -> tentacruel
-74,geodude,geodude -> graveler -> golem
-3,venusaur,bulbasaur -> ivysaur -> venusaur
-5,charmeleon,charmander -> charmeleon -> charizard
-6,charizard,charmander -> charmeleon -> charizard
-8,wartortle,squirtle -> wartortle -> blastoise
-9,blastoise,squirtle -> wartortle -> blastoise
-11,metapod,caterpie -> metapod -> butterfree
-12,butterfree,caterpie -> metapod -> butterfree
-14,kakuna,weedle -> kakuna -> beedrill
-15,beedrill,weedle -> kakuna -> beedrill
-17,pidgeotto,pidgey -> pidgeotto -> pidgeot
-18,pidgeot,pidgey -> pidgeotto -> pidgeot
-20,raticate,rattata -> raticate
-22,fearow,spearow -> fearow
-24,arbok,ekans -> arbok
-25,pikachu,pichu -> pikachu -> raichu
-26,raichu,pichu -> pikachu -> raichu
-28,sandslash,sandshrew -> sandslash
-30,nidorina,nidoran-f -> nidorina -> nidoqueen
-31,nidoqueen,nidoran-f -> nidorina -> nidoqueen
-33,nidorino,nidoran-m -> nidorino -> nidoking
-34,nidoking,nidoran-m -> nidorino -> nidoking
-35,clefairy,cleffa -> clefairy -> clefable
-36,clefable,cleffa -> clefairy -> clefable
-38,ninetales,vulpix -> ninetales
-39,jigglypuff,igglybuff -> jigglypuff -> wigglytuff
-40,wigglytuff,igglybuff -> jigglypuff -> wigglytuff
-42,golbat,zubat -> golbat -> crobat
-44,gloom,oddish -> gloom -> vileplume
-44,gloom,oddish -> gloom -> bellossom
-45,vileplume,oddish -> gloom -> vileplume
-45,vileplume,oddish -> gloom -> bellossom
-47,parasect,paras -> parasect
-49,venomoth,venonat -> venomoth
-51,dugtrio,diglett -> dugtrio
-53,persian,meowth -> persian
-53,persian,meowth -> perrserker
-55,golduck,psyduck -> golduck
-57,primeape,mankey -> primeape -> annihilape
-59,arcanine,growlithe -> arcanine
-61,poliwhirl,poliwag -> poliwhirl -> poliwrath
-61,poliwhirl,poliwag -> poliwhirl -> politoed
-62,poliwrath,poliwag -> poliwhirl -> poliwrath
-62,poliwrath,poliwag -> poliwhirl -> politoed
-64,kadabra,abra -> kadabra -> alakazam
-65,alakazam,abra -> kadabra -> alakazam
-67,machoke,machop -> machoke -> machamp
-68,machamp,machop -> machoke -> machamp
-70,weepinbell,bellsprout -> weepinbell -> victreebel
-71,victreebel,bellsprout -> weepinbell -> victreebel
-73,tentacruel,tentacool -> tentacruel
-75,graveler,geodude -> graveler -> golem
-77,ponyta,ponyta -> rapidash
-79,slowpoke,slowpoke -> slowbro
-79,slowpoke,slowpoke -> slowking
-81,magnemite,magnemite -> magneton -> magnezone
-83,farfetchd,farfetchd -> sirfetchd
-84,doduo,doduo -> dodrio
-86,seel,seel -> dewgong
-88,grimer,grimer -> muk
-90,shellder,shellder -> cloyster
-92,gastly,gastly -> haunter -> gengar
-95,onix,onix -> steelix
-96,drowzee,drowzee -> hypno
-98,krabby,krabby -> kingler
-100,voltorb,voltorb -> electrode
-102,exeggcute,exeggcute -> exeggutor
-104,cubone,cubone -> marowak
-108,lickitung,lickitung -> lickilicky
-109,koffing,koffing -> weezing
-111,rhyhorn,rhyhorn -> rhydon -> rhyperior
-114,tangela,tangela -> tangrowth
-115,kangaskhan,kangaskhan
-116,horsea,horsea -> seadra -> kingdra
-118,goldeen,goldeen -> seaking
-120,staryu,staryu -> starmie
-123,scyther,scyther -> scizor
-123,scyther,scyther -> kleavor
-127,pinsir,pinsir
-128,tauros,tauros
-129,magikarp,magikarp -> gyarados
-131,lapras,lapras
-132,ditto,ditto
-133,eevee,eevee -> vaporeon
-133,eevee,eevee -> jolteon
-133,eevee,eevee -> flareon
-133,eevee,eevee -> espeon
-133,eevee,eevee -> umbreon
-133,eevee,eevee -> leafeon
-133,eevee,eevee -> glaceon
-133,eevee,eevee -> sylveon
-137,porygon,porygon -> porygon2 -> porygon-z
-138,omanyte,omanyte -> omastar
-140,kabuto,kabuto -> kabutops
-142,aerodactyl,aerodactyl
-144,articuno,articuno
-145,zapdos,zapdos
-146,moltres,moltres
-147,dratini,dratini -> dragonair -> dragonite
-150,mewtwo,mewtwo
-78,rapidash,ponyta -> rapidash
-80,slowbro,slowpoke -> slowbro
-80,slowbro,slowpoke -> slowking
-82,magneton,magnemite -> magneton -> magnezone
-85,dodrio,doduo -> dodrio
-87,dewgong,seel -> dewgong
-89,muk,grimer -> muk
-91,cloyster,shellder -> cloyster
-93,haunter,gastly -> haunter -> gengar
-94,gengar,gastly -> haunter -> gengar
-97,hypno,drowzee -> hypno
-99,kingler,krabby -> kingler
-101,electrode,voltorb -> electrode
-103,exeggutor,exeggcute -> exeggutor
-105,marowak,cubone -> marowak
-106,hitmonlee,tyrogue -> hitmonlee
-106,hitmonlee,tyrogue -> hitmonchan
-106,hitmonlee,tyrogue -> hitmontop
-107,hitmonchan,tyrogue -> hitmonlee
-107,hitmonchan,tyrogue -> hitmonchan
-107,hitmonchan,tyrogue -> hitmontop
-110,weezing,koffing -> weezing
-112,rhydon,rhyhorn -> rhydon -> rhyperior
-113,chansey,happiny -> chansey -> blissey
-117,seadra,horsea -> seadra -> kingdra
-119,seaking,goldeen -> seaking
-121,starmie,staryu -> starmie
-122,mr-mime,mime-jr -> mr-mime -> mr-rime
-124,jynx,smoochum -> jynx
-125,electabuzz,elekid -> electabuzz -> electivire
-126,magmar,magby -> magmar -> magmortar
-130,gyarados,magikarp -> gyarados
-134,vaporeon,eevee -> vaporeon
-134,vaporeon,eevee -> jolteon
-134,vaporeon,eevee -> flareon
-134,vaporeon,eevee -> espeon
-134,vaporeon,eevee -> umbreon
-134,vaporeon,eevee -> leafeon
-134,vaporeon,eevee -> glaceon
-134,vaporeon,eevee -> sylveon
-135,jolteon,eevee -> vaporeon
-135,jolteon,eevee -> jolteon
-135,jolteon,eevee -> flareon
-135,jolteon,eevee -> espeon
-135,jolteon,eevee -> umbreon
-135,jolteon,eevee -> leafeon
-135,jolteon,eevee -> glaceon
-135,jolteon,eevee -> sylveon
-136,flareon,eevee -> vaporeon
-136,flareon,eevee -> jolteon
-136,flareon,eevee -> flareon
-136,flareon,eevee -> espeon
-136,flareon,eevee -> umbreon
-136,flareon,eevee -> leafeon
-136,flareon,eevee -> glaceon
-136,flareon,eevee -> sylveon
-139,omastar,omanyte -> omastar
-141,kabutops,kabuto -> kabutops
-143,snorlax,munchlax -> snorlax
-148,dragonair,dratini -> dragonair -> dragonite
-149,dragonite,dratini -> dragonair -> dragonite
-151,mew,mew
-2,ivysaur,bulbasaur -> ivysaur -> venusaur
-76,golem,geodude -> graveler -> golem
+Pokemon ID,Pokemon Name,Pre Evolution,Post Evolution
+1,bulbasaur,None,ivysaur
+4,charmander,None,charmeleon
+7,squirtle,None,wartortle
+10,caterpie,None,metapod
+13,weedle,None,kakuna
+16,pidgey,None,pidgeotto
+19,rattata,None,raticate
+21,spearow,None,fearow
+23,ekans,None,arbok
+27,sandshrew,None,sandslash
+29,nidoran-f,None,nidorina
+32,nidoran-m,None,nidorino
+37,vulpix,None,ninetales
+41,zubat,None,golbat
+43,oddish,None,gloom
+46,paras,None,parasect
+48,venonat,None,venomoth
+50,diglett,None,dugtrio
+52,meowth,None,"persian, perrserker"
+54,psyduck,None,golduck
+56,mankey,None,primeape
+58,growlithe,None,arcanine
+60,poliwag,None,poliwhirl
+63,abra,None,kadabra
+66,machop,None,machoke
+69,bellsprout,None,weepinbell
+72,tentacool,None,tentacruel
+74,geodude,None,graveler
+3,venusaur,ivysaur,None
+5,charmeleon,charmander,charizard
+6,charizard,charmeleon,None
+8,wartortle,squirtle,blastoise
+9,blastoise,wartortle,None
+11,metapod,caterpie,butterfree
+12,butterfree,metapod,None
+14,kakuna,weedle,beedrill
+15,beedrill,kakuna,None
+17,pidgeotto,pidgey,pidgeot
+18,pidgeot,pidgeotto,None
+20,raticate,rattata,None
+22,fearow,spearow,None
+24,arbok,ekans,None
+25,pikachu,pichu,raichu
+26,raichu,pikachu,None
+28,sandslash,sandshrew,None
+30,nidorina,nidoran-f,nidoqueen
+31,nidoqueen,nidorina,None
+33,nidorino,nidoran-m,nidoking
+34,nidoking,nidorino,None
+35,clefairy,cleffa,clefable
+36,clefable,clefairy,None
+38,ninetales,vulpix,None
+39,jigglypuff,igglybuff,wigglytuff
+40,wigglytuff,jigglypuff,None
+42,golbat,zubat,crobat
+44,gloom,oddish,"vileplume, bellossom"
+45,vileplume,gloom,None
+47,parasect,paras,None
+49,venomoth,venonat,None
+51,dugtrio,diglett,None
+53,persian,meowth,None
+55,golduck,psyduck,None
+57,primeape,mankey,annihilape
+59,arcanine,growlithe,None
+61,poliwhirl,poliwag,"poliwrath, politoed"
+62,poliwrath,poliwhirl,None
+64,kadabra,abra,alakazam
+65,alakazam,kadabra,None
+67,machoke,machop,machamp
+68,machamp,machoke,None
+70,weepinbell,bellsprout,victreebel
+71,victreebel,weepinbell,None
+73,tentacruel,tentacool,None
+75,graveler,geodude,golem
+77,ponyta,None,rapidash
+79,slowpoke,None,"slowbro, slowking"
+81,magnemite,None,magneton
+83,farfetchd,None,sirfetchd
+84,doduo,None,dodrio
+86,seel,None,dewgong
+88,grimer,None,muk
+90,shellder,None,cloyster
+92,gastly,None,haunter
+95,onix,None,steelix
+96,drowzee,None,hypno
+98,krabby,None,kingler
+100,voltorb,None,electrode
+102,exeggcute,None,exeggutor
+104,cubone,None,marowak
+108,lickitung,None,lickilicky
+109,koffing,None,weezing
+111,rhyhorn,None,rhydon
+114,tangela,None,tangrowth
+115,kangaskhan,None,None
+116,horsea,None,seadra
+118,goldeen,None,seaking
+120,staryu,None,starmie
+123,scyther,None,"scizor, kleavor"
+127,pinsir,None,None
+128,tauros,None,None
+129,magikarp,None,gyarados
+131,lapras,None,None
+132,ditto,None,None
+133,eevee,None,"vaporeon, jolteon, flareon, espeon, umbreon, leafeon, glaceon, sylveon"
+137,porygon,None,porygon2
+138,omanyte,None,omastar
+140,kabuto,None,kabutops
+142,aerodactyl,None,None
+144,articuno,None,None
+145,zapdos,None,None
+146,moltres,None,None
+147,dratini,None,dragonair
+150,mewtwo,None,None
+78,rapidash,ponyta,None
+80,slowbro,slowpoke,None
+82,magneton,magnemite,magnezone
+85,dodrio,doduo,None
+87,dewgong,seel,None
+89,muk,grimer,None
+91,cloyster,shellder,None
+93,haunter,gastly,gengar
+94,gengar,haunter,None
+97,hypno,drowzee,None
+99,kingler,krabby,None
+101,electrode,voltorb,None
+103,exeggutor,exeggcute,None
+105,marowak,cubone,None
+106,hitmonlee,tyrogue,None
+107,hitmonchan,tyrogue,None
+110,weezing,koffing,None
+112,rhydon,rhyhorn,rhyperior
+113,chansey,happiny,blissey
+117,seadra,horsea,kingdra
+119,seaking,goldeen,None
+121,starmie,staryu,None
+122,mr-mime,mime-jr,mr-rime
+124,jynx,smoochum,None
+125,electabuzz,elekid,electivire
+126,magmar,magby,magmortar
+130,gyarados,magikarp,None
+134,vaporeon,eevee,None
+135,jolteon,eevee,None
+136,flareon,eevee,None
+139,omastar,omanyte,None
+141,kabutops,kabuto,None
+143,snorlax,munchlax,None
+148,dragonair,dratini,dragonite
+149,dragonite,dragonair,None
+151,mew,None,None
+2,ivysaur,bulbasaur,venusaur
+76,golem,graveler,None

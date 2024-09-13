@@ -29,7 +29,7 @@ for index, url in enumerate(pokemon_species_urls):
     # Get evolution chain URL and fetch evolution data
     evolution_chain_url = species_data['evolution_chain']['url']
     evolution_chain_response = requests.get(evolution_chain_url)
-    evolution_chain_data = evolution_chain_response.json()
+    evolution_chain_data = evolution_chain_response.json() #figure out what this is
 
     # Add basic and evolution data to list
     pokemon_list.append({
