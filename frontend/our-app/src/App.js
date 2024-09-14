@@ -1,4 +1,5 @@
 import React from 'react';
+import "./index.css"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './routes/Home';
 import Pokemon from './routes/Pokemon';
@@ -16,3 +17,4 @@ const App = () => {
 };
 
 export default App;
+ 
