@@ -17,7 +17,8 @@ const Footer = () => {
             </div>
             <div className = "right">
               <p>Website developed by</p>
-              <p>Vince Dionisio, Rodrigo Chen, Yue Ying Lee, Andrew Chau, and Anthony Luu</p>
+              <p>Vince Dionisio, Rodrigo Chen, Yue Ying Lee,</p>
+              <p>Natalie Leung,Andrew Chau, and Anthony Luu</p>
             </div>
         </div>
     </div>
