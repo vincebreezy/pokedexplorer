@@ -1,17 +1,29 @@
 from flask import current_app,jsonify,request
 from app import create_app,db
-from models import Articles,articles_schema
+from models import Evolutions, evolutions_schema, Stats, stat_schema
 
 # Create an application instance
 app = create_app()
 
-# Define a route to fetch the avaialable articles
+# evolutions route
+@app.route("/evolutions", methods=["GET"], strict_slashes=False)
+def evolutions():
 
-@app.route("/articles", methods=["GET"], strict_slashes=False)
-def articles():
+	evolutions = Evolutions.query.all()
+	results = evolutions_schema.dump(evolutions)
 
-	articles = Articles.query.all()
-	results = articles_schema.dump(articles)
+	return jsonify(results)
+
+
+if __name__ == "__main__":
+	app.run(debug=True)
+
+# stats route
+@app.route("/stats", methods=["GET"], strict_slashes=False)
+def stats():
+
+	stats = Stats.query.all()
+	results = stats_schema.dump(stats)
 
 	return jsonify(results)
 

@@ -1,23 +1,44 @@
 from app import db,ma
-from datetime import datetime
 
-
-class Articles(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100),nullable=False)
-    body = db.Column(db.Text, nullable=False)
-    date = db.Column(db.DateTime(), default=datetime.utcnow)
-
+# evolutions
+class Evolutions(db.Model):
+    id = db.Column('ID', db.Integer, primary_key=True)
+    name = db.Column('Name', db.String(100),nullable=False)
+    preEvo = db.Column('PreEvo', db.String(100), nullable=False)
+    postEvo = db.Column('PostEvo', db.String(100), nullable=False)
 
     def __repr__(self):
-        return "<Articles %r>" % self.title
+        return "<Evolutions %r>" % self.title
 
 # Generate marshmallow Schemas from your models
-class ArticlesShema(ma.Schema):
+class EvolutionsSchema(ma.Schema):
     class Meta:
         # Fields to expose
-        fields = ("id","title", "body", "date")
+        fields = ("id","name", "preEvo", "postEvo")
 
+evos_schema = EvolutionsSchema()
+evolutions_schema = EvolutionsSchema(many=True)
 
-article_schema = ArticlesShema()
-articles_schema = ArticlesShema(many=True)
+# stats 
+class Stats(db.Model):
+    id = db.Column('ID', db.Integer, primary_key=True)
+    hp = db.Column('HP', db.Integer)
+    attack = db.Column('Attack', db.Integer)
+    defense = db.Column('Defense', db.Integer)
+    spAtk = db.Column('Special Attack', db.Integer)
+    spDef = db.Column('Special Defense', db.Integer)
+    speed = db.Column('Speed', db.Integer)
+    total = db.Column('Total', db.Integer)
+
+    def __repr__(self):
+        return "<Stats %r>" % self.title
+
+# Generate marshmallow Schemas from your models
+class StatsSchema(ma.Schema):
+    class Meta:
+        # Fields to expose
+        fields = ("id","hp", "attack", "defense", "special attack", 
+        "special defense", "speed", "total")
+
+stat_schema = StatsSchema()
+stats_schema = StatsSchema(many=True)

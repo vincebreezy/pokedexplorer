@@ -1,21 +1,35 @@
 import { useState,useEffect } from 'react'
 import './App.css';
-import ArticleList from './Components/ArticleList'
+import { EvolutionList, StatsList } from './Components/ArticleList'
 
 function App() {
-  const [articles, setArticles] = useState([]);
+  const [evolutions, setEvolutions] = useState([]);
+  const [stats, setStats] = useState([]);
 
   // Modify the current state by setting the new data to
   // the response from the backend
   useEffect(()=>{
-    fetch('http://localhost:5000/articles',{
+    fetch('http://localhost:5000/evolutions',{
       'methods':'GET',
       headers : {
         'Content-Type':'application/json'
       }
     })
     .then(response => response.json())
-    .then(response => setArticles(response))
+    .then(response => setEvolutions(response))
+    .catch(error => console.log(error))
+
+  },[])
+
+  useEffect(()=>{
+    fetch('http://localhost:5000/stats',{
+      'methods':'GET',
+      headers : {
+        'Content-Type':'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(response => setStats(response))
     .catch(error => console.log(error))
 
   },[])
@@ -28,9 +42,8 @@ function App() {
       </div>
     </div>
 
-      <ArticleList 
-      articles={articles} 
-      />
+      <EvolutionList evolutions={evolutions} />
+      <StatsList stats={stats} />
 
     </div>
   );

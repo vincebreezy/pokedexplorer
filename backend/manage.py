@@ -2,7 +2,7 @@ def deploy():
 	"""Run deployment tasks."""
 	from app import create_app,db
 	from flask_migrate import upgrade,migrate,init,stamp
-	from models import Articles
+	from models import Evolutions, Stats
 
 	app = create_app()
 	app.app_context().push()
