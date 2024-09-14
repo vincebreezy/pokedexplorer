@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-# Step 1: Fetch all Generation 1 Pokémon data
+# Fetch all Generation 1 Pokémon data
 print("Fetching Generation 1 Pokémon evolutions list...")
 response = requests.get('https://pokeapi.co/api/v2/generation/1/')
 gen1_data = response.json()
@@ -13,12 +13,12 @@ pokemon_species_urls = [species['url'] for species in gen1_data['pokemon_species
 # Initialize a list to hold all Pokémon data
 pokemon_list = []
 
-# Step 2: Fetch and compile data for each Pokémon
-total_pokemons = len(pokemon_species_urls)
+# Fetch and compile data for each Pokémon
+total_pokemon = len(pokemon_species_urls)
 print("Gathering data for each Pokémon...")
 
 for index, url in enumerate(pokemon_species_urls):
-    print(f"Processing Pokémon {index + 1}/{total_pokemons}...")
+    print(f"Processing Pokémon {index + 1}/{total_pokemon}...")
     species_response = requests.get(url)
     species_data = species_response.json()
     
@@ -43,7 +43,7 @@ print("All Pokémon data gathered.")
 # Convert the list of dictionaries into a DataFrame
 df = pd.DataFrame(pokemon_list)
 
-# Step 3: Process pre-evolution and post-evolution columns
+# Process pre-evolution and post-evolution columns
 def extract_pre_post_evolution(chain):
     """ Extract pre-evolution and post-evolution from the chain """
     evolution_map = {}
@@ -72,7 +72,7 @@ for _, row in df.iterrows():
     chain = row['Evolution Chain']['chain']
     evolution_data.update(extract_pre_post_evolution(chain))
 
-# Step 4: Merge pre and post evolution data into the main DataFrame
+# Merge pre and post evolution data into the main DataFrame
 pre_post_data = []
 for _, row in df.iterrows():
     pokemon_name = row['Name']
@@ -88,7 +88,7 @@ for _, row in df.iterrows():
 
 pre_post_df = pd.DataFrame(pre_post_data)
 
-# Step 5: Export to CSV or further manipulate
+# Export to CSV or further manipulate
 pre_post_df.to_csv('evo_data.csv', index=False)
 
 print("Data saved to 'evo_data.csv'.")
