@@ -10,8 +10,13 @@ const Home = () => {
     <div>
       <Navbar />
       <div>
+        <p>
+          Welcome to PokeDexPlorer
+        </p>
+      </div>
+      <div>
         <Link to="/pokemon">
-          <img src={pokeball} alt="pokeball" />
+          <p>Go to Search</p>
         </Link>
       </div>
       <Footer />

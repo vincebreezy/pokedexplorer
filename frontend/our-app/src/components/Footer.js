@@ -18,11 +18,11 @@ const Footer = () => {
             <div className = "right">
               <p>Website developed by</p>
               <p>Vince Dionisio, Rodrigo Chen, Yue Ying Lee,</p>
-              <p>Natalie Leung,Andrew Chau, and Anthony Luu</p>
+              <p>Natalie Leung, Andrew Chau, and Anthony Luu</p>
             </div>
         </div>
     </div>
   )
 }
-
+ 
 export default Footer
