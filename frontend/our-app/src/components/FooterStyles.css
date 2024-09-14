@@ -1,10 +1,10 @@
-.footer{
+.footer {
     width: 100%;
     padding: 3rem 0;
     background-color: lightgray;
 }
 
-.footer-container{
+.footer-container {
     max-width: 1140px;
     margin: auto;
     display: grid;
