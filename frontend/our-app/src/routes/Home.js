@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from "../components/Navbar"
 
 const Home = () => {
   return (
-    <div>Welcome to PokeDexPlorer!</div>
+    <div>
+        <Navbar />
+    </div>
   )
 }
 
