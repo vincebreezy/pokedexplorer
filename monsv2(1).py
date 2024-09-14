@@ -33,8 +33,8 @@ for index, url in enumerate(pokemon_species_urls):
 
     # Add basic and evolution data to list
     pokemon_list.append({
-        'Pokemon ID': pokemon_id,
-        'Pokemon Name': pokemon_name,
+        'ID': pokemon_id,
+        'Name': pokemon_name,
         'Evolution Chain': evolution_chain_data
     })
 
@@ -54,8 +54,8 @@ def extract_pre_post_evolution(chain):
         post_evolutions = [evo['species']['name'] for evo in chain['evolves_to']]
         
         evolution_map[current] = {
-            'Pre Evolution': pre if pre else None,
-            'Post Evolution': post_evolutions if post_evolutions else [None]
+            'PreEvo': pre if pre else None,
+            'PostEvo': post_evolutions if post_evolutions else [None]
         }
         
         # Traverse further evolutions
@@ -75,15 +75,15 @@ for _, row in df.iterrows():
 # Step 4: Merge pre and post evolution data into the main DataFrame
 pre_post_data = []
 for _, row in df.iterrows():
-    pokemon_name = row['Pokemon Name']
-    pre_evolution = evolution_data[pokemon_name]['Pre Evolution']
-    post_evolution = evolution_data[pokemon_name]['Post Evolution']
+    pokemon_name = row['Name']
+    pre_evolution = evolution_data[pokemon_name]['PreEvo']
+    post_evolution = evolution_data[pokemon_name]['PostEvo']
     
     pre_post_data.append({
-        'Pokemon ID': row['Pokemon ID'],
-        'Pokemon Name': pokemon_name,
-        'Pre Evolution': pre_evolution if pre_evolution else 'None',
-        'Post Evolution': ', '.join([evo if evo else 'None' for evo in post_evolution])
+        'ID': row['ID'],
+        'Name': pokemon_name,
+        'PreEvo': pre_evolution if pre_evolution else 'None',
+        'PostEvo': ', '.join([evo if evo else 'None' for evo in post_evolution])
     })
 
 pre_post_df = pd.DataFrame(pre_post_data)
