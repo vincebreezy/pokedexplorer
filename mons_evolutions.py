@@ -2,10 +2,10 @@ import requests
 import pandas as pd
 
 # Step 1: Fetch all Generation 1 Pokémon data
-print("Fetching Generation 1 Pokémon list...")
+print("Fetching Generation 1 Pokémon evolutions list...")
 response = requests.get('https://pokeapi.co/api/v2/generation/1/')
 gen1_data = response.json()
-print("Generation 1 Pokémon list fetched.")
+print("Generation 1 Pokémon evolutions list fetched.")
 
 # Extract Pokémon species URLs
 pokemon_species_urls = [species['url'] for species in gen1_data['pokemon_species']]
