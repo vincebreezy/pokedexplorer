@@ -1,0 +1,46 @@
+.logos {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically (logo/pokeball and text) */
+    justify-content: center; /* Centers everything vertically */
+    align-items: center; /* Centers everything horizontally */
+    height: 80vh; /* Full viewport height for proper vertical centering */
+    text-align: center;
+}
+
+.mask .logoTitle {
+    position: relative;
+    display: inline-block; /* Centers pokeball and logo inside the container */
+    display: flex;
+    flex-direction: column; /* Stack the logo and pokeball vertically */
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+}
+
+.logoTitle {
+    pointer-events: none; /*makes the element non-interactive*/
+}
+
+.logo {
+    position: absolute;
+    top: -70px; /* Adjust the vertical position of the logo */
+    width: 200px;
+    height: 100px;
+    z-index: 1; /* Above the gray logo */
+}
+
+.pokeball {
+    width: 150px;
+    height: 150px;
+    margin-left: 5px; /* Adjusts the horizontal spacing for the pokeball */
+    z-index: 0; /* Default stacking order */
+    transition: transform 0.5s ease, filter 1.5s ease;
+}
+
+.pokeball:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(-10deg); /*brightness(1.2);*/
+}
+
+.content {
+    margin-top: 20px;
+}
