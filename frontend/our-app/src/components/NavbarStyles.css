@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    height: 10vh; /* Full viewport height for proper vertical centering */
+    padding: 0.5rem;
 }
 .nav-menu{
     display:flex;
