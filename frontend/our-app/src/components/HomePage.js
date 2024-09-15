@@ -7,15 +7,6 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    // <div>
-    //     <div>
-    //         <img src={logo} alt="logo" style={{ width: '180px', height: '90px' }}/>
-    //         <img src={pokeball} alt="pokeball" style={{ width: '130px', height: '130px' }}/>
-    //     </div>
-    //     <div>
-    //         <p>Welcome to PokeDexPlorer!</p>
-    //     </div>
-    // </div>
     <div className="logos">
         <div className="mask">
             <img src={logo} alt="logo" className="logo"/>
@@ -24,8 +15,12 @@ const HomePage = () => {
             </Link>
         </div>
         <div className="content">
-            <p>Welcome to PokeDexPlorer!</p>
-            <h1>Click the pokeball to search for evolution trees.</h1>
+            <h1>
+              Welcome to PokeDexPlorer!
+            </h1>
+            <p>
+              <strong>Click the pokeball to search for evolution trees.</strong>
+            </p>
         </div>
     </div>
 

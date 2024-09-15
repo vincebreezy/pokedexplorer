@@ -18,15 +18,34 @@
 
 .logo {
     position: absolute;
-    top: -50px; /* Adjust the vertical position of the logo */
-    width: 180px;
-    height: 90px;
+    top: -70px; /* Adjust the vertical position of the logo */
+    width: 200px;
+    height: 100px;
     z-index: 1; /* Keeps the logo on top of the pokeball */
 }
+/*
+.logo:hover {
+    position: absolute;
+    top: -60px; /* Adjust the vertical position of the logo *
+    width: 180px;
+    height: 90px;
+    z-index: 1; /* Keeps the logo on top of the pokeball *
+}
+*/
 
 .pokeball {
     width: 150px;
     height: 150px;
     margin-left: 5px; /* Adjusts the horizontal spacing for the pokeball */
     z-index: 0; /* Default stacking order */
+    transition: transform 0.5s ease, filter 1.5s ease;
+}
+
+.pokeball:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(-10deg); /*brightness(1.2);*/
+}
+
+.content {
+    margin-top: 20px;
 }
