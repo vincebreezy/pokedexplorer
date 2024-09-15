@@ -9,8 +9,10 @@ const HomePage = () => {
   return (
     <div className="logos">
         <div className="mask">
-            <img src={logo} alt="logo" className="logo"/>
-            <Link to="/pokemon" className="btn"> 
+            <div className="logoTitle">
+              <img src={logo} alt="logo" className="logo"/>
+            </div>
+            <Link to="/pokemon" className="pokeLogo"> 
                 <img src={pokeball} alt="pokeball" className="pokeball"/>
             </Link>
         </div>

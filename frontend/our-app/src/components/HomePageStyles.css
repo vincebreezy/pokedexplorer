@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.mask {
+.mask .logoTitle {
     position: relative;
     display: inline-block; /* Centers pokeball and logo inside the container */
     display: flex;
@@ -16,13 +16,19 @@
     align-items: center; /* Center horizontally */
 }
 
+.logoTitle {
+    pointer-events: none;
+}
+
 .logo {
     position: absolute;
     top: -70px; /* Adjust the vertical position of the logo */
     width: 200px;
     height: 100px;
-    z-index: 1; /* Keeps the logo on top of the pokeball */
+    z-index: 1; /* Above the gray logo */
 }
+
+
 /*
 .logo:hover {
     position: absolute;
