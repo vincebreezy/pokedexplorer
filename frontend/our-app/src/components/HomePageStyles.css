@@ -17,7 +17,7 @@
 }
 
 .logoTitle {
-    pointer-events: none;
+    pointer-events: none; /*makes the element non-interactive*/
 }
 
 .logo {
@@ -27,17 +27,6 @@
     height: 100px;
     z-index: 1; /* Above the gray logo */
 }
-
-
-/*
-.logo:hover {
-    position: absolute;
-    top: -60px; /* Adjust the vertical position of the logo *
-    width: 180px;
-    height: 90px;
-    z-index: 1; /* Keeps the logo on top of the pokeball *
-}
-*/
 
 .pokeball {
     width: 150px;

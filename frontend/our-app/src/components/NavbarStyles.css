@@ -6,6 +6,9 @@
     padding: 0.5rem;
 }
 
+.logoImg:hover img {
+    content: url('../assets/colored_pokeballhome.png'); /* Colored image on hover */
+}
 .nav-menu{
     display:flex;
 }
@@ -20,6 +23,6 @@
 }
 
 .logo {
-    
+
 }
 

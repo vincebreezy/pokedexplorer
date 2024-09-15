@@ -13,7 +13,7 @@ const HomePage = () => {
               <img src={logo} alt="logo" className="logo"/>
             </div>
             <Link to="/pokemon" className="pokeLogo"> 
-                <img src={pokeball} alt="pokeball" className="pokeball"/>
+                <img src={pokeball} alt="pokeball" className="pokeball" draggable="false"/>
             </Link>
         </div>
         <div className="content">

@@ -7,8 +7,8 @@ import homelogo from "../assets/pokeballhome.png"
 const Navbar = () => {
   return (
     <div className = "header">
-        <Link to="/">
-          <img src={homelogo} alt="homelogo" style={{ width: '100px', height: '60px' }}/>
+        <Link to="/" className="logoImg">
+          <img src={homelogo} alt="homelogo" draggable="false" style={{ width: '100px', height: '60px' }}/>
         </Link>
     </div>
   )
