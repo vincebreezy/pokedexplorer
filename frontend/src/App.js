@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { EvolutionList, StatsList }  from './routes/ArticleList';
+import { EvolutionList, StatsList, MonList }  from './routes/ArticleList';
 import React from 'react';
 import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -10,6 +10,7 @@ import Pokemon from './routes/Pokemon';
 function App() {
   const [evolutions, setEvolutions] = useState([]);
   const [stats, setStats] = useState([]);
+  const [monlist, setMonList] = useState([]);
 
   useEffect(()=>{
     fetch('http://localhost:5000/evolutions',{
@@ -32,6 +33,16 @@ function App() {
     .then(response => setStats(response))
     .catch(error => console.log(error))
 
+    fetch('http://localhost:5000/monlist',{
+      'methods':'GET',
+      headers : {
+        'Content-Type':'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(response => setMonList(response))
+    .catch(error => console.log(error))
+
   },[])
 
   return (
@@ -43,6 +54,7 @@ function App() {
           {/* Render ArticleList only on the /articles route */}
           <Route path="/evolutions" element={<EvolutionList evolutions={evolutions} />} />
           <Route path="/stats" element={<StatsList stats={stats} />} />
+          <Route path="/monlist" element={<MonList monlist={monlist} />} />
         </Routes>
       </Router>
     </div>

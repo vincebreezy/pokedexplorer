@@ -72,4 +72,26 @@ return (
     )
 }
 
-export { EvolutionList, StatsList };
+const MonList = (props) => {
+
+  return (
+      <div className="m-2">
+      {/* Display the monlist details if monlist is not None */} 
+       {props.monlist && props.monlist.map(monlist =>{
+          return (
+  
+            <div key= {monlist.id}>
+              <h2 className="text-primary"> { monlist.name} </h2>
+              <p> Pokemon ID: { monlist.id } </p>
+              <p> Type 1: { monlist.first_type } </p>
+              <p> Type 2:{ monlist.second_type } </p>
+            <hr/>
+            </div>
+          )
+          
+          })}
+      </div>
+      )
+  }
+
+export { EvolutionList, StatsList, MonList };
