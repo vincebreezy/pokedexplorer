@@ -29,7 +29,7 @@ for index, url in enumerate(pokemon_name_list_urls):
     # Get name list URL and fetch name list data
     first_type = name_list_data['types'][0]['type']['name']
     # check for second type with if case
-    second_type = name_list_data['types'][1]['type']['name'] if len(name_list_data['types']) > 1 else None
+    second_type = name_list_data['types'][1]['type']['name'] if len(name_list_data['types']) > 1 else 'None'
 
     # Add Pokémon data to list
     pokemon_list.append({
