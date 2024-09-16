@@ -1,37 +1,17 @@
 
-import { useState,useEffect } from 'react'
-const ArticleList = (props) => {
-
-  const [articles, setArticles] = useState([]);
-
-  // Modify the current state by setting the new data to
-  // the response from the backend
-  useEffect(()=>{
-    fetch('http://localhost:5000/articles',{
-      'methods':'GET',
-      headers : {
-        'Content-Type':'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(response => setArticles(response))
-    .catch(error => console.log(error))
-
-  },[])
+const EvolutionList = (props) => {
 
     return (
         <div className="m-2">
-      
-        articles={articles} 
-    
-        {/* Display the article details if article is not None */} 
-   	    {props.articles && props.articles.map(article =>{
+        {/* Display the evolution details if evolutions is not None */} 
+   	    {props.evolutions && props.evolutions.map(evolution =>{
             return (
 
-              <div key= {article.id}>
-                <h2 className="text-primary"> { article.title} </h2>
-                <p> { article.body } </p>
-                <p> { article.date } </p>
+              <div key= {evolution.id}>
+                <h2 className="text-primary"> { evolution.name} </h2>
+                <p> Pokemon ID: { evolution.id } </p>
+                <p> Pre-Evolution: { evolution.preEvo } </p>
+                <p> Post-Evolution: { evolution.postEvo } </p>
     	        <hr/>
               </div>
             )
@@ -41,4 +21,30 @@ const ArticleList = (props) => {
         )
 }
 
-export default ArticleList;
+const StatsList = (props) => {
+
+  return (
+      <div className="m-2">
+      {/* Display the stat details if stats is not None */} 
+       {props.stats && props.stats.map(stat =>{
+          return (
+
+            <div key= {stat.id}>
+              <h2 className="text-primary"> Pokemon ID: { stat.id} </h2>
+              <p> HP Stat: { stat.hp } </p>
+              <p> Attack Stat: { stat.attack } </p>
+              <p> Defense Stat:{ stat.defense } </p>
+              <p> Special Attack Stat: { stat.spAtk } </p>
+              <p> Special Defense Stat: { stat.spDef } </p>
+              <p> Speed Stat: { stat.speed } </p>
+              <p> Total Base Stat: { stat.total } </p>
+            <hr/>
+            </div>
+          )
+          
+          })}
+      </div>
+      )
+}
+
+export { EvolutionList, StatsList };
