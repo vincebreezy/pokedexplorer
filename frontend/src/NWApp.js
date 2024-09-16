@@ -1,16 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState,useEffect } from 'react'
 import './App.css';
-import ArticleList from './routes/ArticleList';
-import React from 'react';
-import './index.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './routes/Home';
-import Pokemon from './routes/Pokemon';
+import { EvolutionList, StatsList } from './Components/ArticleList'
 
 function App() {
   const [evolutions, setEvolutions] = useState([]);
   const [stats, setStats] = useState([]);
 
+  // Modify the current state by setting the new data to
+  // the response from the backend
   useEffect(()=>{
     fetch('http://localhost:5000/evolutions',{
       'methods':'GET',
@@ -39,14 +36,15 @@ function App() {
 
   return (
     <div className="App container m-4">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pokemon" element={<Pokemon />} />
-          {/* Render ArticleList only on the /articles route */}
-          <Route path="/evolutions" element={<ArticleList evolutions={evolutions} />} />
-        </Routes>
-      </Router>
+    <div className="row">
+      <div className="text-center">
+      <h1>Connecting a React Frontend to a Flask Backend.</h1>
+      </div>
+    </div>
+
+      <EvolutionList evolutions={evolutions} />
+      <StatsList stats={stats} />
+
     </div>
   );
 }
