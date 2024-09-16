@@ -22,9 +22,6 @@ function App() {
     .then(response => setEvolutions(response))
     .catch(error => console.log(error))
 
-  },[])
-
-  useEffect(()=>{
     fetch('http://localhost:5000/stats',{
       'methods':'GET',
       headers : {
@@ -45,6 +42,7 @@ function App() {
           <Route path="/pokemon" element={<Pokemon />} />
           {/* Render ArticleList only on the /articles route */}
           <Route path="/evolutions" element={<EvolutionList evolutions={evolutions} />} />
+          <Route path="/stats" element={<StatsList stats={stats} />} />
         </Routes>
       </Router>
     </div>
