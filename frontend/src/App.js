@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import ArticleList from './routes/ArticleList';
+import { EvolutionList, StatsList }  from './routes/ArticleList';
 import React from 'react';
 import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -44,7 +44,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pokemon" element={<Pokemon />} />
           {/* Render ArticleList only on the /articles route */}
-          <Route path="/evolutions" element={<ArticleList evolutions={evolutions} />} />
+          <Route path="/evolutions" element={<EvolutionList evolutions={evolutions} />} />
         </Routes>
       </Router>
     </div>
