@@ -4,19 +4,20 @@ import { FaSearch } from "react-icons/fa"
 import { useState } from "react"
 import React from 'react'
 
-const Searchbar = () => {
+const Searchbar = ({setResults}) => {
 
   const [input, setInput] = useState("")
   const fetchData = (value) => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("http://localhost:5000/monlist")
         .then((response) => response.json())
         .then(json => {
-            const results = json.filter((user) => {
-                return value && user && user.name && user.name.toLowerCase().includes(value)
+            const results = json.filter((mon) => {
+                return value && mon && mon.name && mon.name.toLowerCase().includes(value.toLowerCase())
             })
-            console.log(results)
+            setResults(results)
         })
-  }
+}
+
 
   const handleChange = (value) => {
     setInput(value)
