@@ -16,5 +16,8 @@ const App = () => {
   );
 };
 
+var sampledataRouter = require('./routes/sample');
+
+app.use('/sample', sampledataRouter);
 export default App;
  
